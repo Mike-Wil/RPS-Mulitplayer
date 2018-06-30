@@ -1,1 +1,1 @@
-# RPS-Mulitplayer
+# RPS-Multiplayer
