@@ -1,0 +1,80 @@
+
+@font-face {
+    font-family: 'emh';
+	src: url('AVENGEANCE_MIGHTIEST_AVENGER.otf');
+}
+
+@font-face {
+    font-family: 'Avengers';
+	/* src: url('heroesassemble3dital.ttf'); */
+	src: url('heroesassembleacadital.ttf');
+}
+
+img {
+	width: 20%;
+	margin: 5px 10px 5px 10px;
+}
+
+#chatBlock {
+	height: 175px;
+   	overflow: auto;
+	background: rgb(255, 226, 186);
+	/* background-image: url('../images/blue-dots.jpg') */
+	/* padding: 2px; */
+}
+
+.jumbotron {
+	/* background-color: #3159b0; */
+	background-color: rgb(31,114,135);
+	font-family: 'emh';
+	color: rgb(221,28,37);
+	/* font-size: 100px; */
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+.jumbotron h1 {
+	font-family: 'Avengers';
+
+	/* color: white; */
+	/* font-size: 144px; */
+}
+body {
+	background-color: rgb(221,28,37);
+	font-family: 'emh';
+
+	letter-spacing: 1.5px;
+
+}
+
+
+/* not working?? */
+
+#p1-div, #p2-div{
+
+	/* for some reason cant get the borders to be thick? */
+	 border:10px solid white;
+	/* border-bottom:5px solid white; */
+	/* border-width: 20px;
+	border-color: white; */
+	background: rgb(255, 226, 186);
+	/* padding: 5px; */
+
+}
+
+#chatBox {
+	border:10px solid white;
+}
+
+#chatName, #user-msg {
+	background-color: rgb(255, 226, 186);
+	
+}
+
+/* .div {
+	border-width: 20px;
+	border-color: white;
+} */
+
+.btn-primary {
+	background-color: rgb(31,114,135);
+}
+

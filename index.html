@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang='en-us'>
+<head>
+	<title>RPS Multiplayer</title>
+	<meta charset='utf-8'></meta>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <link href='https://fonts.googleapis.com/css?family=Archivo' rel='stylesheet'>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel='stylesheet' type='text/css' href='assets/css/style.css'>
+	<script src='https://www.gstatic.com/firebasejs/4.12.0/firebase.js'></script>
+
+</head>
+<body>
+	<!-- <div id='wrap'> -->
+        <div class='jumbotron jumbotron-fluid'>
+            <div class='container text-center'>
+                <h2>Rock Paper Scissors</h2>
+                <h1 class='display-1'>Arena</h1>
+            </div>
+        </div>
+		<div class='container'>
+			<div class='row' id='main'>
+				<div class='col-6  rounded-left p-2 text-center' id='p1-div'>
+					<div id='p1-login'>
+						<form onSubmit="return false;">
+							<div class='form-group row'>
+						      <label for='p1-name' class='col-lg-6 col-sm-12 col-form-label'>Enter Hero ID To Assemble: </label>
+						      <div class='col-lg-3 col-sm-12'>
+						        <input type='text' class='form-control' id='p1-name'>
+						      </div>
+						      <div class='col-lg-2 col-sm-12'>
+								<button type='button' class='btn btn-primary' id='p1-btn'>Submit</button>
+							  </div>
+						    </div>
+						</form>
+					</div>
+					<div id='p1-state'></div>
+					<div id='p1'></div>		
+				</div>
+				<div class='col-6 rounded-right p-2 text-center' id='p2-div'>
+					<div id='p2-login'>
+						<form onSubmit="return false;">
+							<div class='form-group row'>
+						      <label for='p2-name' class='col-lg-6 col-sm-12 col-form-label'>Enter Hero ID To Assemble: </label>
+						      <div class='col-lg-3 col-sm-12'>
+						        <input type='text' class='form-control' id='p2-name'>
+						      </div>
+						      <div class='col-lg-2 col-sm-12'>
+								<button type='button' class='btn btn-primary' id='p2-btn'>Submit</button>
+							  </div>
+						    </div>
+						</form>
+					</div>
+					<div id='p2-state'></div>
+					<div id='p2'></div>		
+				</div>
+			</div>
+			<div class='my-3 p-3 row rounded' id='chatBox'>
+				<div class='col-12'>
+					<div class='row'>
+						<h5>Chat Room</h5>
+					</div>
+					<div class='rounded p-2' id='chatBlock'></div><br>
+					<form onSubmit="return false;" name='message' action=''>
+						<div class='row'>
+							<div class='col-sm-2 rounded py-1 text-center' id='chatName'>
+							</div>
+							<div class='col-sm-8'>
+								<input name='usermsg' class='form-control' type='text' id='user-msg' placeholder='Trash Talk'/>
+							</div>
+							<div class='col-sm-2'>
+        						<button name='submit-msg' class='btn btn-secondary' type='button' id='submit-msg' value='Send'>Send</button>
+							</div>
+						</div>
+    				</form>
+				</div>
+			</div>
+
+
+
+		</div> 
+	<!-- </div>  -->
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script type='text/javascript' src='assets/javascript/app.js'></script> 
+	<!-- link to my app.js -->
+
+
+	
+</body>
+</html>
